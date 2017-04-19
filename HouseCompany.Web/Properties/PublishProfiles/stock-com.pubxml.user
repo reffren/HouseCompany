@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Этот файл используется в процессе публикации или упаковки вашего веб-проекта. Вы можете настроить поведение процесса,
+изменив этот файл MSBuild. Дополнительные сведения см. по адресу http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Tim\Desktop\stock-com.ru</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>04/07/2017 17:19:53</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>04/10/2017 18:49:55</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>04/10/2017 18:49:55</publishTime>
+    </File>
+    <File Include="bin/HouseCompany.Data.dll">
+      <publishTime>04/16/2017 22:19:23</publishTime>
+    </File>
+    <File Include="bin/HouseCompany.Web.dll">
+      <publishTime>04/19/2017 12:49:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/07/2017 17:11:47</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/07/2017 17:11:47</publishTime>
+    </File>
+    <File Include="bin/Ninject.dll">
+      <publishTime>04/10/2017 19:00:44</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Helpers.resources.dll">
+      <publishTime>04/07/2017 17:10:41</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Mvc.resources.dll">
+      <publishTime>04/07/2017 17:10:42</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Razor.resources.dll">
+      <publishTime>04/07/2017 17:10:41</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Webpages.Deployment.resources.dll">
+      <publishTime>04/07/2017 17:10:41</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Webpages.Razor.resources.dll">
+      <publishTime>04/07/2017 17:10:41</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Webpages.resources.dll">
+      <publishTime>04/07/2017 17:10:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>04/07/2017 17:10:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>04/07/2017 17:10:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>04/07/2017 17:11:47</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>04/07/2017 17:10:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>04/07/2017 17:10:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>04/07/2017 17:10:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>04/07/2017 17:10:41</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>04/07/2017 17:19:39</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>04/07/2017 17:12:03</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>04/07/2017 17:12:03</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>04/07/2017 17:12:03</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>04/07/2017 17:12:03</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>04/07/2017 17:12:03</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>04/07/2017 17:12:03</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>04/13/2017 00:56:30</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>04/07/2017 17:12:03</publishTime>
+    </File>
+    <File Include="Content/ekko-lightbox.css">
+      <publishTime>04/10/2017 18:14:26</publishTime>
+    </File>
+    <File Include="Content/ekko-lightbox.min.css">
+      <publishTime>04/10/2017 18:14:26</publishTime>
+    </File>
+    <File Include="Content/Gallery/1.jpg">
+      <publishTime>04/12/2017 21:42:44</publishTime>
+    </File>
+    <File Include="Content/Gallery/2.jpg">
+      <publishTime>04/12/2017 21:43:03</publishTime>
+    </File>
+    <File Include="Content/Gallery/3.jpg">
+      <publishTime>04/12/2017 21:43:06</publishTime>
+    </File>
+    <File Include="Content/Gallery/4.jpg">
+      <publishTime>04/12/2017 21:43:09</publishTime>
+    </File>
+    <File Include="Content/Gallery/5.jpg">
+      <publishTime>04/12/2017 21:43:12</publishTime>
+    </File>
+    <File Include="Content/Gallery/6.jpg">
+      <publishTime>04/12/2017 21:43:15</publishTime>
+    </File>
+    <File Include="Content/Gallery/7.jpg">
+      <publishTime>04/12/2017 21:43:18</publishTime>
+    </File>
+    <File Include="Content/Gallery/8.jpg">
+      <publishTime>04/12/2017 21:43:21</publishTime>
+    </File>
+    <File Include="Content/Gallery/9.jpg">
+      <publishTime>04/12/2017 21:43:23</publishTime>
+    </File>
+    <File Include="Content/Images/1.jpg">
+      <publishTime>04/16/2017 14:30:41</publishTime>
+    </File>
+    <File Include="Content/Images/2.jpg">
+      <publishTime>04/16/2017 14:30:41</publishTime>
+    </File>
+    <File Include="Content/Images/3.jpg">
+      <publishTime>04/07/2017 21:29:34</publishTime>
+    </File>
+    <File Include="Content/Images/logo.png">
+      <publishTime>04/16/2017 18:13:39</publishTime>
+    </File>
+    <File Include="Content/Images/person1.jpg">
+      <publishTime>04/08/2017 17:19:51</publishTime>
+    </File>
+    <File Include="Content/Images/person2.jpg">
+      <publishTime>04/08/2017 17:19:51</publishTime>
+    </File>
+    <File Include="Content/Images/person3.jpg">
+      <publishTime>04/08/2017 17:19:51</publishTime>
+    </File>
+    <File Include="Content/Images/topLogo.jpg">
+      <publishTime>04/12/2017 22:01:15</publishTime>
+    </File>
+    <File Include="Content/main.css">
+      <publishTime>04/16/2017 21:42:23</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/07/2017 17:12:03</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/07/2017 17:12:03</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/07/2017 17:12:03</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/07/2017 17:12:03</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>04/07/2017 17:12:03</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/07/2017 17:11:05</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/10/2017 19:00:44</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>04/07/2017 17:12:03</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>04/07/2017 17:12:03</publishTime>
+    </File>
+    <File Include="Scripts/ekko-lightbox.js">
+      <publishTime>04/10/2017 18:14:42</publishTime>
+    </File>
+    <File Include="Scripts/ekko-lightbox.min.js">
+      <publishTime>04/10/2017 18:14:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.js">
+      <publishTime>04/07/2017 17:12:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.js">
+      <publishTime>04/07/2017 17:12:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.map">
+      <publishTime>04/07/2017 17:12:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.js">
+      <publishTime>04/07/2017 17:12:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.js">
+      <publishTime>04/07/2017 17:12:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.map">
+      <publishTime>04/07/2017 17:12:11</publishTime>
+    </File>
+    <File Include="Views/Account/LogOn.cshtml">
+      <publishTime>04/16/2017 21:42:08</publishTime>
+    </File>
+    <File Include="Views/Admin/EditAboutCompany.cshtml">
+      <publishTime>04/16/2017 11:53:52</publishTime>
+    </File>
+    <File Include="Views/Admin/EditComment.cshtml">
+      <publishTime>04/19/2017 12:46:44</publishTime>
+    </File>
+    <File Include="Views/Admin/EditContacts.cshtml">
+      <publishTime>04/15/2017 22:06:05</publishTime>
+    </File>
+    <File Include="Views/Admin/EditPhotoGallery.cshtml">
+      <publishTime>04/15/2017 19:59:41</publishTime>
+    </File>
+    <File Include="Views/Admin/Index.cshtml">
+      <publishTime>04/16/2017 18:37:37</publishTime>
+    </File>
+    <File Include="Views/Home/Comments.cshtml">
+      <publishTime>04/15/2017 20:02:48</publishTime>
+    </File>
+    <File Include="Views/Home/Gallery.cshtml">
+      <publishTime>04/16/2017 16:39:24</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>04/16/2017 12:10:37</publishTime>
+    </File>
+    <File Include="Views/Home/Service.cshtml">
+      <publishTime>04/10/2017 18:47:25</publishTime>
+    </File>
+    <File Include="Views/Info/SiteInfo.cshtml">
+      <publishTime>04/16/2017 18:43:15</publishTime>
+    </File>
+    <File Include="Views/Shared/AboutCompany.cshtml">
+      <publishTime>04/16/2017 21:19:13</publishTime>
+    </File>
+    <File Include="Views/Shared/AdminMenu.cshtml">
+      <publishTime>04/16/2017 21:19:13</publishTime>
+    </File>
+    <File Include="Views/Shared/CarouselComments.cshtml">
+      <publishTime>04/16/2017 21:19:13</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>04/16/2017 21:19:13</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>04/07/2017 17:36:51</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>04/07/2017 17:15:00</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/16/2017 21:45:24</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

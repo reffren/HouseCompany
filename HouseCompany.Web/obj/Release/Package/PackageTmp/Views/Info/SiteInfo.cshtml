@@ -1,0 +1,31 @@
+﻿@model HouseCompany.Data.Entities.Contact
+@{
+    Layout = null;
+}
+<section class="about_company">
+    <div class="container-fluid">
+        <div class="row">
+            <section class="col-md-4">
+                <ul class="inform">
+                    <li><h4>ПОЧЕМУ ВЫБИРАЮТ НАС</h4></li>
+                    <li>@Html.ActionLink("Вопросы", "Index", "Home", null, new { @class = "btn-default" })</li>
+                </ul>
+            </section>
+            <section class="col-md-4 informH">
+                <ul class="inform">
+                    <li><h4>ФОТО-ГАЛЕРЕЯ</h4></li>
+                    <li>@Html.ActionLink("Дома", "Gallery", "Home", null, new { @class = "btn-default" })</li>
+                    <li>@Html.ActionLink("Бани", "Gallery", "Home", null, new { @class = "btn-default" })</li>
+                </ul>
+            </section>
+            <section class="col-md-4">
+                <ul class="inform">
+                    <li><h4>КАК С НАМИ СВЯЗАТЬСЯ</h4></li>
+                    <li><strong>Телефон:</strong><a name="contacts"></a> @Model.Phone</li>
+                    <li><strong>E-mail:</strong> @Model.Email</li>
+                    <li><strong>Адрес:</strong> @Model.Adress</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</section>

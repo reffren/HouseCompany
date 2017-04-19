@@ -1,0 +1,34 @@
+﻿@model HouseCompany.Web.Models.MainModel
+@{
+    ViewBag.Title = "Надежный дом по вашему проекту";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="carousel1">
+    <div id="carousel_top" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            @{
+                var i = 0;
+                foreach (var p in Model.PhotosMainPage)
+                {
+                    var itemClass = i++ == 0 ? "item active" : "item";
+                    <div class="@itemClass">
+                        <img class="img_width" src="@Url.Content(p.PhotoMain)" alt="@p.PhotoName">
+                        <div class="carousel-caption">
+                            <h3>@p.PhotoName</h3>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+
+        <!-- Controls1 -->
+        <a class="left carousel-control" href="#carousel_top" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel_top" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div> <!-- Carousel1 -->
+</section>
+@Html.Partial("AboutCompany")
+@Html.Partial("CarouselComments")

@@ -1,0 +1,19 @@
+﻿@model HouseCompany.Data.Entities.AboutCompany
+@{
+    ViewBag.Title = "EditAboutCompany";
+}
+@Html.Partial("AdminMenu")
+
+@using (Html.BeginForm("EditAboutCompany", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-group">
+        <label for="exampleInputPhone">Описание левой стороны</label>
+        @Html.HiddenFor(m => m.AboutCompanyID)
+        @Html.TextAreaFor(m => m.DescriptionLeft, new { @class = "form-control", id = "exampleInputPhone", placeholder = "Введите описание, которое будет отображаться с левой стороны главной страницы" })
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail">Описание правой стороны</label>
+        @Html.TextAreaFor(m => m.DescriptionRight, new { @class = "form-control", id = "exampleInputEmail", placeholder = "Введите описание, которое будет отображаться с правой стороны главной страницы" })
+    </div>
+    <input type="submit" class="btn btn-success" value="Сохранить">
+}

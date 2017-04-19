@@ -1,0 +1,59 @@
+﻿@model IEnumerable<HouseCompany.Data.Entities.PhotoMainPage>
+@{
+    ViewBag.Title = "Index";
+}
+@Html.Partial("AdminMenu")
+<div class="container add_photo">
+    @using (Html.BeginForm("EditPhotoMainPage", "Admin", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-inline" }))
+    {
+        <div class="row">
+            <input type="file" name="Image" class="col-md-3" />
+            @Html.TextBox("PhotoName", null, new { @class = "col-md-5", placeholder = "Название картинки (будет отображаться под картинкой на главной странице)" })
+            <input type="submit" value="Cохранить изображение" class="col-md-3 col-md-offset-1 btn btn-success" />
+        </div>
+    }
+</div>
+
+<section class="carousel1">
+    <div id="carousel_top" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+@{
+    var i = 0;
+    foreach (var p in Model)
+    {
+        var itemClass = i++ == 0 ? "item active" : "item";
+        <div class="@itemClass">
+            <img class="img_width" src="@Url.Content(p.PhotoMain)" alt="@p.PhotoName">
+            <div class="carousel-caption">
+                <h3>@p.PhotoName</h3>
+            </div>
+        </div>
+    }
+}
+        </div>
+
+        <!-- Controls1 -->
+        <a class="left carousel-control" href="#carousel_top" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel_top" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div> <!-- Carousel1 -->
+</section>
+
+<div class="container">
+    <div class="row">
+        @foreach (var m in Model)
+        {
+            <div>
+                @using (Html.BeginForm("EditPhotoMainPage", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" })) 
+                {
+                @Html.Hidden("PhotoMainID", m.PhotoMainID)
+                <img src="@Url.Content(m.PhotoMain)" class="img-responsive delete_photo" />
+    <input type="submit" class="btn btn-danger btn_delete_photo" value="Удалить фото">
+                }
+            </div>
+        }
+    </div>
+</div>

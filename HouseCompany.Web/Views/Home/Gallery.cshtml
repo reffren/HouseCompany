@@ -1,0 +1,37 @@
+﻿@model IEnumerable<HouseCompany.Data.Entities.PhotoGallery>
+@{
+    ViewBag.Title = "Фото-галерея домов";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    @for (int i = 0; i < Model.Count(); i++)
+    {
+    using (Html.BeginForm("EditComment", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        if (i % 3 == 0)
+        {
+            @:<div class="row img_row">
+        }
+        <div>
+            <a href="@Url.Content(Model.ElementAt(i).Photo)" data-toggle="lightbox" data-gallery="multiimages" class="col-sm-4" title="@Model.ElementAt(i).Title">
+                <img width="350" height="350" src="@Url.Content(Model.ElementAt(i).Photo)" class="img-responsive">
+            </a>
+        </div>
+        if ((i + 1) % 3 == 0)
+        {
+            @:</div>
+        } 
+        }      
+        }
+</div>
+</div>
+@Styles.Render("~/Content/css/gallery")
+@Scripts.Render("~/bundles/gallery")
+
+<script type="text/javascript">
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>

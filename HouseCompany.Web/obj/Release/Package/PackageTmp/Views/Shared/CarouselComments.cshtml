@@ -1,0 +1,34 @@
+﻿@model HouseCompany.Web.Models.MainModel
+@{
+    Layout = null;
+}
+<div id="carousel_middle" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+@{
+       var i = 0;
+       foreach (var c in Model.Comments) {
+       var itemClass = i++ ==0 ? "item active" : "item";
+        <div class="@itemClass" id="item_car2">
+            <div class="col-md-12 text-center" id="text_com">
+                <h2>
+                    <span><strong>@Html.ActionLink("ЧТО ГОВОРЯТ О НАС НАШИ КЛИЕНТЫ", "Comments", "Home", new {@class ="aComments" })</strong></span>
+                </h2>
+                <img src="@Url.Action("GetImageComment", "Home", new { c.CommentID })" class="img-circle" height="200" width="200" alt="...">
+                <br>
+                <h3 id="comment">
+                    <span>@c.Message</span>
+                </h3>
+            </div>
+        </div>
+      }
+}
+    </div>
+
+    <!-- Controls2 -->
+    <a class="left carousel-control" href="#carousel_middle" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel_middle" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div> <!-- Carousel2 -->

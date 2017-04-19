@@ -1,0 +1,41 @@
+﻿@model IEnumerable<HouseCompany.Data.Entities.Comment>
+@{
+    ViewBag.Title = "EditComment";
+}
+@Html.Partial("AdminMenu")
+<div class="container add_photo">
+    @using (Html.BeginForm("EditComment", "Admin", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-inline" }))
+    {
+        <div class="row">
+            <div class="col-md-4">
+                <input type="file" name="Image" />           
+            </div>
+            <div class="col-md-6 vCenter">
+                <p>@Html.TextArea("Message", new { rows = 5, @class = "form-control", placeholder="Введите текст комментария" }) <br /><br /> <strong>@Html.TextBox("UserName", null, new { placeholder = "Введите имя" })</strong> <input type="submit" value="Cохранить комментарий" class="btn btn-success" />
+            </div>
+        </div>
+    }
+</div>
+<div class="container padComment">
+    @for (int i = 0; i < Model.Count(); i++)
+    {
+        using (Html.BeginForm("EditComment", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div class="row">
+                <div class="col-md-4 img_row">
+                    @Html.Hidden("CommentID", Model.ElementAt(i).CommentID)
+                    <img height="220" src="@Url.Action("GetImageComment", "Home", new { Model.ElementAt(i).CommentID })" class="img-rounded" />
+                </div>
+                <div class="col-md-6 vCenter">
+                    <p>@Html.TextArea("Message", Model.ElementAt(i).Message, new { rows = 5, @class = "form-control" }) <br /> <strong>@Html.TextBox("UserName", Model.ElementAt(i).UserName)</strong> <input type="submit" class="btn btn-success" value="Редактировать комментарий" />
+                </div>
+            </div>
+        }
+
+        using (Html.BeginForm("DeleteComment", "Admin", FormMethod.Post, new { enctype = "multipart/form-data", @class = "btn_delete_photo" }))
+        {
+        @Html.Hidden("CommentID", Model.ElementAt(i).CommentID)
+            <input type="submit" class="btn btn-danger" value="Удалить комментарий">
+        }
+    }
+</div>

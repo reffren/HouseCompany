@@ -1,0 +1,340 @@
+﻿#logo {
+    left: 10px;
+    position: absolute;
+}
+
+/*BUTTONS*/
+.my_btn{
+	background-color: #e84545;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+}
+/*HEADER*/
+#top_nav {
+    background-color: #313035;
+    height: 60px;
+}
+
+#top_menu {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.phone{
+	list-style-type: none;
+    padding-right: 20px;
+}
+.phone li a{
+	color: white;
+    font-size: 1.3em;
+}
+.phone li a:hover,
+.phone li a:focus{
+	text-decoration: none;
+	color: #666666;
+}
+#main_menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*UNDERLINE MENU ITEMS*/
+
+ul.menu li {
+    display: inline-block;
+}
+ul.menu li a{
+    position: relative;
+    display: block;
+    margin-right: 1.618em;
+    padding: 15px 0 5px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: 'RalewayBold', sans-serif;
+}
+ul.menu li a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: black;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+ul.menu li a:hover:before, ul.menu li a:focus:before, ul.menu li a:active:before {
+  left: 0;
+  right: 0;
+}
+
+
+/*CAROUSEL1*/
+#carousel_top {
+background: #ddd;
+}
+.img_width {
+    width: 100%;
+}
+
+/*ABOUT_COMPANY*/
+.about_company {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align:center;
+}
+#ac_column {
+    border-right: thin solid gray;
+}
+
+/*CAROUSEL2*/
+#carousel_middle {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Content/Images/1.jpg');
+}
+
+#item_car2 {
+    padding-top: 100px;
+    padding-bottom: 400px;
+}
+#comment {
+    padding-left: 5em;
+    padding-right:5em;
+}
+#text_com {
+    color: white;
+}
+.aComments {
+    text-decoration: none;
+    color: #fff;
+}
+.aComments:hover {
+    text-decoration: none;
+    color: #666666;
+}
+
+/*Gallery*/
+
+.img_row {
+    margin-bottom: 30px;
+}
+
+/*COMMENTS*/
+.vCenter {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   height:15em;
+}
+
+/*SITEINFO*/
+
+ul.inform li {
+    font-family: "PTSansRegular",arial,helvetica,sans-serif;
+    list-style-type: none;
+    text-align:left;   
+}   
+
+/*FOOTER*/
+footer {
+   padding-top: 15px;
+   padding-bottom: 5px;
+   background-color: #313035;
+   text-align: center;
+}
+
+footer p{
+    color: white;
+}
+
+
+/*ADMIN*/
+
+.admin_intrance {
+    padding-top: 100px;
+    padding-bottom:200px;
+}
+.pad_right {
+    padding-left: 20px;
+}
+/*AdminMenu*/
+
+ul.admin_menu {
+  left: 0;
+  right: 0;
+  padding-bottom: 40px;
+}
+ul.admin_menu li {
+    display: inline-block;
+}
+/*EditPhotoGallery*/
+
+.add_photo {
+    padding-top: 30px;
+    padding-bottom:40px;
+}
+
+/*INDEX*/
+.delete_photo {
+    padding-top: 40px;
+}
+
+.btn_delete_photo {
+    padding-bottom: 30px;
+}
+
+/*EditComment*/
+.padComment {
+    padding-top: 40px;
+}
+
+@media only screen and (max-width : 770px) {
+
+#logo {
+    display: none;
+}
+
+/*HEADER*/
+#top_nav {
+    padding-bottom: 10px;
+    height: 58px;
+}
+
+#top_menu {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.phone {
+    display: none;
+}
+
+.menu_btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: red;
+    color: #fff;
+}
+
+.menu li {
+    display: block;
+    text-align: center;
+}
+
+.menu li a {
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#main_nav {
+    background-color: #313035;
+}
+
+ul.menu li {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+ul.menu li a {
+    display: block;
+    float: left;
+    width: 90%;
+    padding: 1em 5%;
+    margin: 0;
+    text-align: left;
+    color: #fff;
+    border-top: 1px solid rgba(255,255,255,1);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul.menu li a:before {
+     display: none;
+}
+
+/*CAROUSEL1*/
+
+
+/*ABOUT_COMPANY*/
+.about_company {
+     padding-top: 0px;
+     padding-bottom: 0px;
+     text-align: center;
+}
+
+#ac_column {
+     border-right: none;
+     border-bottom: thin solid gray;
+}
+
+/*CAROUSEL2*/
+#carousel_middle {
+     width: 100%;
+     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Images/1.jpg');
+}
+
+#item_car2 {
+     padding-top: 10px;
+     padding-bottom: 20px;
+}
+
+#comment {
+     padding-left: 0em;
+     padding-right: 0em;
+}
+
+#text_com {
+     color: white;
+}
+
+/*INFORMATION*/
+    ul.inform li {
+    text-align: center;
+}
+}
+
+@media only screen and (max-width : 1000px) {
+
+/*CAROUSEL2*/
+#carousel_middle {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Images/1.jpg');
+}
+
+#item_car2 {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+#comment {
+    padding-left: 0em;
+    padding-right: 0em;
+}
+
+#text_com {
+   color: white;
+}
+
+/*INFORMATION*/
+ul.inform li {
+    text-align: center;
+}
+}

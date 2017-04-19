@@ -1,0 +1,23 @@
+﻿@model HouseCompany.Data.Entities.Contact
+@{
+    ViewBag.Title = "EditContacts";
+}
+@Html.Partial("AdminMenu")
+
+@using(Html.BeginForm("EditContacts", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" })) {
+<div class="form-group">
+    <label for="exampleInputPhone">Телефон</label>
+    @Html.HiddenFor(m=>m.ContactID)
+    @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", id = "exampleInputPhone", placeholder = "Телефон" })
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail">Email</label>
+    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", id = "exampleInputEmail", placeholder = "Email" })
+</div>
+<div class="form-group">
+    <label for="exampleInputAdress">Адрес</label>
+    @Html.TextBoxFor(m => m.Adress, new { @class="form-control", id="exampleInputAdress", placeholder="Адрес"})
+</div>
+<input type="submit" class="btn btn-success" value="Сохранить">
+}
+

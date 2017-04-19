@@ -1,0 +1,20 @@
+﻿@model IEnumerable<HouseCompany.Data.Entities.Comment>
+@{
+    ViewBag.Title = "Отзывы клиентов";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    @foreach (var p in Model)
+    {
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1 img_row">
+                <img height="220" src="@Url.Action("GetImageComment", "Home", new { p.CommentID })" class="img-rounded" />
+            </div>
+            <div class="col-md-6 vCenter">
+                <p>@p.Message <br /><br /> <strong class="pull-right">@p.UserName</strong></p>
+            </div>
+        </div>
+    }
+</div>
+
