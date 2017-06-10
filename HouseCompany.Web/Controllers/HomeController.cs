@@ -31,7 +31,7 @@ namespace HouseCompany.Web.Controllers
 
         public ActionResult Gallery()
         {
-            var photos = _repository.PhotoGalleries.ToList();
+            var photos = _repository.PhotoGalleries.OrderByDescending(o => o.PhotoID).ToList();
             return View(photos);
         }
 

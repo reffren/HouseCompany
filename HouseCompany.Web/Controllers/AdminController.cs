@@ -87,11 +87,6 @@ namespace HouseCompany.Web.Controllers
             return RedirectToAction("EditComment", "Admin");
         }
 
-        public ActionResult EditPhotoGallery()
-        {
-            return View(_repository.PhotoGalleries.ToList());
-        }
-
         public ActionResult EditAboutCompany()
         {
             return View(_repository.AboutCompanies.FirstOrDefault());
@@ -104,6 +99,10 @@ namespace HouseCompany.Web.Controllers
             return View();
         }
 
+        public ActionResult EditPhotoGallery()
+        {
+            return View(_repository.PhotoGalleries.OrderByDescending(o => o.PhotoID).ToList());
+        }
 
         [HttpPost]
         public ActionResult EditPhotoGallery(PhotoGallery galley, HttpPostedFileBase image)
