@@ -124,6 +124,7 @@
     <Content Include="Content\Gallery\8.jpg" />
     <Content Include="Content\Images\1.jpg" />
     <Content Include="Content\Images\2.jpg" />
+    <Content Include="Content\Images\error.png" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\main.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -158,6 +159,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\ErrorHandlerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InfoController.cs" />
     <Compile Include="Global.asax.cs">
@@ -186,6 +188,8 @@
     <Content Include="Views\Info\SiteInfo.cshtml" />
     <Content Include="Views\Shared\AboutCompany.cshtml" />
     <Content Include="Views\Account\LogOn.cshtml" />
+    <Content Include="Views\ErrorHandler\Index.cshtml" />
+    <Content Include="Views\ErrorHandler\NotFound.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
