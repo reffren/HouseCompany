@@ -9,8 +9,14 @@
     <_PublishTargetUrl>C:\Users\Tim\Desktop\stock-com.ru</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="App_Readme/Elmah.txt">
+      <publishTime>06/12/2017 19:16:21</publishTime>
+    </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>04/07/2017 17:19:53</publishTime>
+    </File>
+    <File Include="bin/Elmah.dll">
+      <publishTime>06/12/2017 19:16:21</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>04/10/2017 18:49:55</publishTime>
@@ -22,7 +28,7 @@
       <publishTime>04/16/2017 22:19:23</publishTime>
     </File>
     <File Include="bin/HouseCompany.Web.dll">
-      <publishTime>04/19/2017 12:49:03</publishTime>
+      <publishTime>06/12/2017 19:26:03</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>04/07/2017 17:11:47</publishTime>
@@ -141,6 +147,9 @@
     <File Include="Content/Images/3.jpg">
       <publishTime>04/07/2017 21:29:34</publishTime>
     </File>
+    <File Include="Content/Images/error.png">
+      <publishTime>06/12/2017 17:41:25</publishTime>
+    </File>
     <File Include="Content/Images/logo.png">
       <publishTime>04/16/2017 18:13:39</publishTime>
     </File>
@@ -157,7 +166,7 @@
       <publishTime>04/12/2017 22:01:15</publishTime>
     </File>
     <File Include="Content/main.css">
-      <publishTime>04/16/2017 21:42:23</publishTime>
+      <publishTime>06/12/2017 17:38:34</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
       <publishTime>04/07/2017 17:12:03</publishTime>
@@ -178,7 +187,7 @@
       <publishTime>04/07/2017 17:11:05</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>04/10/2017 19:00:44</publishTime>
+      <publishTime>06/12/2017 19:16:21</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>04/07/2017 17:12:03</publishTime>
@@ -217,7 +226,7 @@
       <publishTime>04/16/2017 11:53:52</publishTime>
     </File>
     <File Include="Views/Admin/EditComment.cshtml">
-      <publishTime>04/19/2017 12:46:44</publishTime>
+      <publishTime>06/03/2017 11:10:42</publishTime>
     </File>
     <File Include="Views/Admin/EditContacts.cshtml">
       <publishTime>04/15/2017 22:06:05</publishTime>
@@ -227,6 +236,12 @@
     </File>
     <File Include="Views/Admin/Index.cshtml">
       <publishTime>04/16/2017 18:37:37</publishTime>
+    </File>
+    <File Include="Views/ErrorHandler/Index.cshtml">
+      <publishTime>06/12/2017 17:36:24</publishTime>
+    </File>
+    <File Include="Views/ErrorHandler/NotFound.cshtml">
+      <publishTime>06/12/2017 17:36:24</publishTime>
     </File>
     <File Include="Views/Home/Comments.cshtml">
       <publishTime>04/15/2017 20:02:48</publishTime>
@@ -247,13 +262,13 @@
       <publishTime>04/16/2017 21:19:13</publishTime>
     </File>
     <File Include="Views/Shared/AdminMenu.cshtml">
-      <publishTime>04/16/2017 21:19:13</publishTime>
+      <publishTime>06/12/2017 19:19:14</publishTime>
     </File>
     <File Include="Views/Shared/CarouselComments.cshtml">
       <publishTime>04/16/2017 21:19:13</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>04/19/2017 13:58:27</publishTime>
+      <publishTime>06/12/2017 17:42:23</publishTime>
     </File>
     <File Include="Views/web.config">
       <publishTime>04/07/2017 17:36:51</publishTime>
@@ -262,7 +277,7 @@
       <publishTime>04/07/2017 17:15:00</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/16/2017 21:45:24</publishTime>
+      <publishTime>06/12/2017 19:26:03</publishTime>
     </File>
   </ItemGroup>
 </Project>

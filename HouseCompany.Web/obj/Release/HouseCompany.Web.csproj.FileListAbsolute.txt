@@ -38,3 +38,4 @@ C:\Users\Tim\Documents\Visual Studio 2013\Projects\HouseCompany\HouseCompany.Web
 C:\Users\Tim\Documents\Visual Studio 2013\Projects\HouseCompany\HouseCompany.Web\bin\EntityFramework.SqlServer.xml
 C:\Users\Tim\Documents\Visual Studio 2013\Projects\HouseCompany\HouseCompany.Web\bin\Ninject.xml
 C:\Users\Tim\Documents\Visual Studio 2013\Projects\HouseCompany\HouseCompany.Web\obj\Release\HouseCompany.Web.csprojResolveAssemblyReference.cache
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\HouseCompany\HouseCompany.Web\bin\Elmah.dll
