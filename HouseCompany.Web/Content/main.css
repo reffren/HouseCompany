@@ -1,29 +1,27 @@
 ﻿#logo {
     left: 10px;
     position: absolute;
+    z-index: 1;
 }
 
-/*BUTTONS*/
-.my_btn{
-	background-color: #e84545;
-	border: none;
-	text-transform: uppercase;
-	color: #fff;
-}
 /*HEADER*/
-#top_nav {
-    background-color: #313035;
-    height: 60px;
-}
 
+.my_navbar {
+    height: 150px;
+    padding-top: 80px;
+}
 #top_menu {
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 20px;
+    background-color: #313035;
+    position: absolute;
+    width: 100%;
 }
 
 .phone{
 	list-style-type: none;
     padding-right: 20px;
+    padding-bottom: 10px;
 }
 .phone li a{
 	color: white;
@@ -50,7 +48,7 @@ ul.menu li a{
     margin-right: 1.618em;
     padding: 15px 0 5px;
     text-decoration: none;
-    color: black;
+    color: black !important;
     text-transform: uppercase;
     line-height: 30px;
     font-weight: 700;
@@ -59,7 +57,6 @@ ul.menu li a{
 ul.menu li a:before {
     content: "";
     position: absolute;
-    z-index: -1;
     left: 50%;
     right: 50%;
     bottom: 0;
@@ -209,82 +206,60 @@ ul.admin_menu li {
 }
 @media only screen and (max-width : 770px) {
 
-#logo {
-    display: none;
-}
-
 /*HEADER*/
-#top_nav {
-    padding-bottom: 10px;
-    height: 58px;
-}
 
 #top_menu {
-    padding-top: 15px;
+    padding-top: 65px;
     padding-left: 20px;
 }
 
 .phone {
     display: none;
 }
+.my_navbar {
+    height: 60px;
+    padding-top: 0px;
+}
 
+/*BUTTONS*/
+.glyphicon {
+    font-size: 27px;
+}
 .menu_btn {
-    height: 40px;
-    width: 40px;
+    margin-top: 5px !important;
+    height: 47px;
+    width: 47px;
     border-radius: 50%;
     background-color: red;
     color: #fff;
 }
 
-.menu li {
-    display: block;
-    text-align: center;
-}
-
-.menu li a {
-    display: block;
-}
-
-.menu li a:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-#main_nav {
+.mob_menu {
+    position: relative;
     background-color: #313035;
+    z-index: 1;
 }
-
+.menu {
+    float: none;
+    padding-top: 0px;
+}
 ul.menu li {
     display: block;
-    position: relative;
-    float: left;
-    width: 100%;
+    text-align: center;
+    padding-top: 20px;
 }
-
 ul.menu li a {
-    display: block;
-    float: left;
-    width: 90%;
-    padding: 1em 5%;
-    margin: 0;
-    text-align: left;
-    color: #fff;
-    border-top: 1px solid rgba(255,255,255,1);
-    text-decoration: none;
-    text-transform: uppercase;
+    color: white !important;
 }
-
-ul.menu li a:before {
-     display: none;
+ul.menu li a:before{
+    background: white;
 }
-
-/*CAROUSEL1*/
 
 
 /*ABOUT_COMPANY*/
 .about_company {
-     padding-top: 0px;
-     padding-bottom: 0px;
+     padding-top: 30px;
+     padding-bottom: 30px;
      text-align: center;
 }
 
@@ -311,6 +286,11 @@ ul.menu li a:before {
 
 #text_com {
      color: white;
+}
+
+/*Gallery*/
+.img_gallery {
+    padding-top: 40px;
 }
 
 /*INFORMATION*/
